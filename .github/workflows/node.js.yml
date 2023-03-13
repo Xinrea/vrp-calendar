@@ -10,6 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "Asia/Shanghai"
     - uses: actions/checkout@v3
     - name: Use Node.js
       uses: actions/setup-node@v3
