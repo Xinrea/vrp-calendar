@@ -1,0 +1,23 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        cache: 'npm'
+    - run: npm install
+    - run: node main.js
+    - name: Git Commit/Push Changes
+      uses: actions-x/commit@v6
+      with:
+        files: ./vrp.ics
