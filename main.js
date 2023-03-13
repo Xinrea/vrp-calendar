@@ -15,8 +15,8 @@ axios.get('https://vrp.live/api/calendar?locale=zh_CN').then(response => {
       }
       calendar.createEvent({
         timezone: 'zh_CN',
-        start: new Date(event.startAt),
-        end: new Date(event.endAt),
+        start: new Date(event.startAt + 8*60*60*1000),
+        end: new Date(event.endAt + 8*60*60*1000),
         summary: summary,
         url: url
       });
