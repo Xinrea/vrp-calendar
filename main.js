@@ -14,8 +14,8 @@ axios.get('https://vrp.live/api/calendar?locale=zh_CN').then(response => {
         url = `https://live.bilibili.com/${event.attendee[0].roomId}`;
       }
       calendar.createEvent({
-        timezone: 'Asia/Shanghai',
-        start: new Date(event.startAt),
+        timezone: 'UTC',
+        start: new Date(event.startAt + 8*60),
         end: new Date(event.endAt),
         summary: summary,
         url: url
