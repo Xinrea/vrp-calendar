@@ -1,6 +1,6 @@
 # vrp-calendar
 
-上次更新时间：
+每整点自动更新
 
 数据生成自 https://vrp.live/schedule
 
