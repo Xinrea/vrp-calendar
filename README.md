@@ -4,4 +4,4 @@
 
 数据生成自 https://vrp.live/schedule
 
-[点击订阅日历](webcal://raw.githubusercontent.com/Xinrea/vrp-calendar/main/vrp.ics)
+日历订阅地址：webcal://raw.githubusercontent.com/Xinrea/vrp-calendar/main/vrp.ics
