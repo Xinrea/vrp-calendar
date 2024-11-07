@@ -21,6 +21,6 @@ jobs:
     - run: npm install
     - run: node main.js
     - name: Git Commit/Push Changes
-      uses: actions-x/commit@v6
+      uses: EndBug/add-and-commit@v9
       with:
-        files: ./vrp.ics
+        add: ./vrp.ics
