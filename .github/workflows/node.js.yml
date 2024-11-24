@@ -24,4 +24,4 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         add: ./vrp.ics
-        default_autohor: github_actions
+        default_author: github_actions
